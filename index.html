@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>gradeWebsite</title>
 </head>
 
@@ -16,12 +16,13 @@
             STUDENT <br> GRADE <br> CALCY
         </div>
         <div class="right">
-            <input type="text" id="phy" placeholder="PHYSICS">
-            <input type="text" id="che" placeholder="CHEMISTRY">
-            <input type="text" id="math" placeholder="MATH">
-            <input type="text" id="hin" placeholder="HINDI">
-            <input type="text" id="eng" placeholder="ENGLISH">
-            <button id="btn" onclick="calcy()">SHOW RESULT</button>
+            <input type="number" id="phy" placeholder="PHYSICS" required>
+            <input type="number" id="che" placeholder="CHEMISTRY" required>
+            <input type="number" id="math" placeholder="MATH" required>
+            <input type="number" id="hin" placeholder="HINDI" required>
+
+            <input type="number" id="eng" placeholder="ENGLISH" required>
+            <button id="btn" class="submitButton" onclick="calcy()">SHOW RESULT</button>
 
         </div>
     </div>
